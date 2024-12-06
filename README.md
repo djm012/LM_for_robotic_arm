@@ -1,6 +1,6 @@
-OFA:目标检测，垃圾分类（server.py）
+**OFA**:目标检测，垃圾分类（server.py）
 
-openvla:followed by https://github.com/openvla/openvla 
+**openvla**:followed by https://github.com/openvla/openvla 
 
 机械臂运动控制大模型(deploy.py) 
 
