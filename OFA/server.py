@@ -71,7 +71,7 @@ def zh_to_en(zh_str):
 # 判断视觉定位结果的可信度
 def is_vg_reliable(imgclass_result, text):
     text_array = text.split()
-    threshold = 0.6
+    threshold = 0.35
     top_n_index = [0,1,2,3,4]
     img_labels = imgclass_result["labels"]
     img_scores = imgclass_result["scores"]
@@ -79,8 +79,8 @@ def is_vg_reliable(imgclass_result, text):
         label = img_labels[index]
         score = img_scores[index]
         if score >= threshold:
-            for keyword in text_array:
-                if keyword in label:
+#            for keyword in text_array:
+#                if keyword in label:
                     return True
     return False
 
